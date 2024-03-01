@@ -1,0 +1,29 @@
+print("Enter a to do:")  this is a function called print which will printout, in this case, a string.
+a string is line of characters you must use "" or '' around your characters - be consistant
+# we need to prompt user but also get some input
+input() #this will get input from user but we need to save this input
+user_text = input() #we assign a variable named user_text to input() = is assignment not equal to
+
+print("Enter a to do:")
+user_text = input()
+print(user_text)
+
+print() is a function
+input() is a function
+arguments go inside ()
+
+"Enter a to do" is an argument used in the print() function
+
+If use an argument in the input function we can remove the print line of code as the input() function is
+also able to print to screen so or code will look like:
+
+user_text = input("Enter a to do:")
+print(user_text)
+
+it is possible to store a string as a variable so we could store "Enter a to do: " as a variable by
+
+user_prompt = "Enter a to do: " and then using this variable as an argument in function input()
+input(prompt)
+we can also assign this function to a variable
+user_text = input(user_prompt)
+print(user_text)

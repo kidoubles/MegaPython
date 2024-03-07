@@ -1,5 +1,6 @@
 print("Enter a to do:")  this is a function called print which will printout, in this case, a string.
-a string is line of characters you must use "" or '' around your characters - be consistant
+to use a function we use it's name and then brackets () and in the brackets we enter the values
+a string is line of characters you must use "" or '' around your characters - be consistent
 # we need to prompt user but also get some input
 input() #this will get input from user but we need to save this input
 user_text = input() #we assign a variable named user_text to input() = is assignment not equal to
@@ -21,9 +22,57 @@ user_text = input("Enter a to do:")
 print(user_text)
 
 it is possible to store a string as a variable so we could store "Enter a to do: " as a variable by
+by giving it a name in this case user_prompt and assigning using = and the value "Enter a to do:" which is a string type
 
 user_prompt = "Enter a to do: " and then using this variable as an argument in function input()
 input(prompt)
 we can also assign this function to a variable
 user_text = input(user_prompt)
 print(user_text)
+
+entering multiple to do lines
+one way multiple input functions
+user_text = input(user_prompt) is changed to
+user_text1 = input(user_prompt)
+user_text2 = input(user_prompt)
+user_text3 = input(user_prompt) etc
+
+we now need a way to store multiple variables
+in this case we can use lists which is a data type
+list are show by using the square brackets []
+
+create another variable called to_do and add the user text separating each with a comer , - using the assignment operator
+
+to_do = [user_text1, user_text2, user_text3]
+the above is another variable with data type of list
+and then print out using
+print(to_do)
+this will print out the list
+
+to find out what data type a variable is we use another function called 'type'
+
+print(type(to_do))
+
+above we have a function 'type' inside another function 'print' and the name of the variable to_do
+in this case it will print out class as 'list'
+if changed to user_text3 we would get class 'str' for string
+
+the above method of getting user input is not sustainable as we do not know how many to do items the user may wish to enter
+at any give time, 1 or 200, it is unfeasible to have 200 input functions!
+
+so far the code looks like:
+user_prompt = "Enter a to do: "
+user_text1 = input(user_prompt)
+user_text2 = input(user_prompt)
+user_text3 = input(user_prompt)
+
+to_do = [user_text1, user_text2, user_text3]
+print(to_do)
+
+print(type(to_do))  # this prints out the data type of the variable to_do, can change it to user_prompt or user_text
+
+now we move to 'Batch' operations:
+in the above asking user three times for an input - what if they had more or less items to include in their list?
+We want to have one input function and then execute this function multiple times
+
+one way is to use a while loop
